@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	va_start(params, format);
 	for (i = 0; format[i] != '\0'; i++)
-        {
+	{
 
 		if (format[i] != '%')
 		{
@@ -21,11 +21,12 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			count += print_format(format[i+1], params);
-		       i++;	
+			count += print_format(format[i + 1], params);
+			i++;	
 		}
-        }
-    va_end(params);
-    return (count);
+
+	}
+	va_end(params);
+	return (count);
 }
 
