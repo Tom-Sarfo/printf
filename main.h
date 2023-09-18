@@ -6,6 +6,8 @@
 #include <stdlib.h>
 
 int output_char(char c);
+int output_str(char *s);
+int print_format(char specifier, va_list params);
 int _printf(const char *format, ...);
 
 #endif
