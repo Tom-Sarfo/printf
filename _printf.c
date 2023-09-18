@@ -7,11 +7,11 @@
  */
 int _printf(const char *format, ...)
 {
-    unsigned int i, count;
-    va_list params;
-    if (!format || (format[0] == '%' && format[1] == '\0'))
-        return (-1);
-    va_start(params, format);
+	unsigned int i, count;
+	va_list params;
+	if (!format || (format[0] == '%' && format[1] == '\0'))
+		return (-1);
+	va_start(params, format);
 	for (i = 0; format[i] != '\0'; i++)
         {
 
