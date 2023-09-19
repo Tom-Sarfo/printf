@@ -23,7 +23,6 @@ va_start(params, format);
 		else
 		{
 		count += print_format(format[i + 1], params);
-		i++;
 		}
 	}
 	va_end(params);
