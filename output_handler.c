@@ -16,7 +16,5 @@ int print_format(char specifier, va_list params)
 		count = output_str(va_arg(params, char *));
 	else if (specifier == '%')
 		count = output_char('%');
-	else
-		count += write(1, &specifier, 1);
 	return (count);
 }
